@@ -1,0 +1,27 @@
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.logo {
+    filter: brightness(15) ;
+}
+.linkInternoFooter {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+.copyright {
+    color: white;
+    font-size: 12px;
+}
+@media all and (min-width:1200px) {
+    .footer {
+        flex-direction: row;
+    }
+}

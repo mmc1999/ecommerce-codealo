@@ -1,0 +1,29 @@
+.seccionPrincipalCarrito {
+    width: 70%;
+    position: absolute;
+    top: 53px;
+    right: 20px;
+    box-shadow: 2px 2px 2px 2px grey;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.divButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FF7E1B;
+    height: 50px;
+    border-radius: 10px;
+}
+.button {
+    font-family: Kumbh Sans;
+    color: white;
+    text-decoration: none;
+}
+@media all and (min-width:300px) {
+    .seccionPrincipalCarrito {
+        width: 250px;
+    }
+}

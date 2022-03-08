@@ -1,0 +1,31 @@
+.primerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.imagen {
+    width: 60px;
+}
+.button {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF7E1B;
+    color: white;
+    cursor: pointer;
+}
+.titulo {
+    font-size: 16px;
+}
+.datos {
+    margin: 0%;
+    opacity: 0.6;
+    font-size: 14px;
+    
+}
+.iconoDeCerrar {
+    cursor: pointer;
+}

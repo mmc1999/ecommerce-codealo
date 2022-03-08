@@ -1,0 +1,77 @@
+.divProducto {
+    box-shadow: 2px 2px 4px 3px rgb(160, 160, 160);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #435065;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.title {
+    margin-top: 0px;
+    font-size:20px;
+    font-weight: 700;
+    color: white;
+}
+.parrafo {
+    color: white;
+}
+.imagen {
+    max-width: 100%;
+    background-color: #435065;
+    cursor: pointer;
+}
+.caracteristicas {
+    padding: 1px 8px;
+    display: inline;
+    margin: 0% 10px;
+    border-radius: 20px;
+    background-color: #c8daf541;
+}
+.price {
+    color: #FBD38D;
+}
+.categories {
+    color: #90CDF4;
+}
+.divOperaciones {
+    background-color: #F6F8FD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 0px 15px;
+    height: 50px;
+}
+.operaciones {
+    font-size: 25px;
+    cursor: pointer;
+}
+.divButton {
+    position: relative;
+}
+.button::before {
+    content: url("../images/icon-cart.svg");
+    position: relative;
+    filter: brightness(5);
+}
+.button::after {
+    content: "Agregar al carrito";
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    top: -4px;
+    left: 10px;
+}
+button {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF7E1B;
+    color: white;
+    cursor: pointer;
+}
+.button:active {
+    height: 40px;
+}

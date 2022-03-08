@@ -1,0 +1,55 @@
+.primerDiv {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.imagen {
+    width: 60px;
+}
+    
+.divDatos {
+    width: 100%;
+}
+.divTituloCant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.titulo {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0%;
+    font-style:italic;
+}
+.cantidad {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.datos {
+    margin: 0%;
+    opacity: 0.6;
+    font-size: 14px;
+}
+.seccionDetalles {
+    margin-top: 20px;
+}
+.divResumenCompra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resumenDataFijo {
+    opacity: 0.7;
+    font-size: 15px;
+    margin: 0%;
+}
+.resumenDatoVariable {
+    font-weight: 700;
+    margin: 0%;
+}
+.sumaTotal {
+    color: #FF7E1B;
+    margin:10px 0px;
+}

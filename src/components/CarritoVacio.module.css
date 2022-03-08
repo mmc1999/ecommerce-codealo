@@ -1,0 +1,12 @@
+.primerDivCarrito {
+    position: relative;
+    border-bottom: thin solid rgba(88, 88, 88, 0.315);
+    padding-bottom: 15px;
+}
+.cart {
+    margin: 0px;
+    font-size: 13px;
+}
+.cartaVacia {
+    text-align: center;
+}

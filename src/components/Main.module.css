@@ -1,0 +1,53 @@
+.seccionCategorias {
+    padding: 15px;
+}
+.h1 {
+    text-transform: uppercase;
+}
+.divTecnologias {
+    display: flex;
+    gap: 50px;
+    overflow: auto;
+    padding: 15px;
+}
+.divDivTech {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 1px 5px 5px 1px grey;
+   
+}
+.imagenesTecnologias {
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+}
+.seccionProducto {
+    margin-top: 30px;
+    padding: 15px;
+}
+.divProducto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+@media all and (min-width:600px) {
+    .divProducto {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+
+}
+@media all and (min-width:1200px) {
+    .seccionCategorias {
+        margin-top: 50px;
+    }
+    .divTecnologias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
