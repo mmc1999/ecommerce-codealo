@@ -19,8 +19,8 @@ export default function Formulario({}) {
                 <h1>CHECKOUT</h1>
                 <section className={FormularioModule.seccion}>
                     <p className={FormularioModule.tituloSeccion}>Detalles de facturacion</p>
-                    <div>
-                    <div className={FormularioModule.divLabelInput}>
+                    <div className={FormularioModule.divSeccion}>
+                        <div className={FormularioModule.divLabelInput}>
                             <label htmlFor='nombre'>Nombre</label>
                             <input type="text" id='nombre' name='nombre' />
                         </div>
@@ -36,8 +36,8 @@ export default function Formulario({}) {
                 </section>
                 <section className={FormularioModule.seccion}>
                     <p className={FormularioModule.tituloSeccion}>Datos de envio</p>
-                    <div>
-                    <div className={FormularioModule.divLabelInput}>
+                    <div className={FormularioModule.divSeccion}>
+                        <div className={FormularioModule.divLabelInput}>
                             <label htmlFor='adressHome'>Tu Direccion</label>
                             <input type="text" id='adressHome' name='adressHome' />
                         </div>
@@ -57,16 +57,16 @@ export default function Formulario({}) {
                 </section>
                 <section className={FormularioModule.seccion}>
                     <p className={FormularioModule.tituloSeccion}>Metodo de pago</p>
-                    <div>
+                    <div className={`${FormularioModule.divSeccion} ${FormularioModule.divSeccionInputRadio}`}>
                         <div className={`${FormularioModule.divLabelInput} ${FormularioModule.inputRadio}`}>
-                            <input type="radio" />
+                            <input type="radio" className={FormularioModule.inputRadio} />
                             <label className={FormularioModule.labelTarjeta}>Tarjeta</label>
                         </div>
-                        <div className={FormularioModule.divLabelInput}>
+                        <div className={`${FormularioModule.divLabelInput} ${FormularioModule.divInput}`}>
                             <label htmlFor='tarjetaNumber'>Numero de Tarjeta</label>
                             <input type="number" id='tarjetaNumber' name='tarjetaNumber' />
                         </div>
-                        <div className={FormularioModule.divLabelInput}>
+                        <div className={`${FormularioModule.divLabelInput} ${FormularioModule.divInput2}`}>
                             <label htmlFor='safeNumber'>Numero de seguro</label>
                             <input type="number" id='safeNumber' name='safeNumber' />
                         </div>     

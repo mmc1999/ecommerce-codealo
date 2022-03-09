@@ -5,6 +5,8 @@ export default function useMenuMobile() {
     const [menu2, setMenu] = useState(false);
     const [carritoCompra, setCarritoCompra] = useState(false)
 
+    window.addEventListener("scroll", e => window.scrollY != 0 ? setCarritoCompra(false) : "")
+
     const handleClickAbrir = () =>{ 
         setMenu(true)
         setCarritoCompra(false)

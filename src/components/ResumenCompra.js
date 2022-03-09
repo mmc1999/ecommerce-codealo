@@ -2,7 +2,6 @@ import React from 'react';
 import ResumenCompraModule from "./ResumenCompra.module.css";
 
 export default function ResumenCompra({el}) {
-    
     return (
         <>
             <div className={ResumenCompraModule.primerDiv}>
@@ -15,7 +14,6 @@ export default function ResumenCompra({el}) {
                     <p className={ResumenCompraModule.datos}><b>${(el[0]*el[1].price).toFixed(2)}</b></p>
                 </div>
             </div>
-            
         </>
         
     )

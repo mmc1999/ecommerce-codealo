@@ -48,3 +48,47 @@ input {
 .botonPagar {
     font-family: 'Kumbh Sans', sans-serif;
 }
+@media all and (min-width:600px) {
+    .divSeccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 20px;
+    }
+    input {
+        width: 100%;
+    }
+    .divSeccionInputRadio {
+        display: grid;
+        grid-template-areas: 
+        "radio ."
+        "input input2";
+    }
+    .inputRadio {
+        grid-area: radio;
+        width: initial;
+
+    }
+    .divInput {
+        grid-area: input;
+    }
+    .divInput2 {
+        grid-area: input2;
+    }
+}
+@media all and (min-width:1200px) {
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .primerDivform {
+        width: 60%;
+        padding: 20px;
+    }
+    .segundoDivform {
+        width: 20%;
+        height:80%;
+        padding: 20px;
+    }
+}
