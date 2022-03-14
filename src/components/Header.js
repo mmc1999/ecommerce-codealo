@@ -17,7 +17,7 @@ export default function Header() {
         carritoCompra,
         menu2
     } = useMenuMobile();
-    console.log(carritoCompra)
+    
     return(
         <header className={HeaderModule.header}>
                 <img src={menu} alt="icono hamburguesa" className={HeaderModule.iconoMenu} onClick={handleClickAbrir} />

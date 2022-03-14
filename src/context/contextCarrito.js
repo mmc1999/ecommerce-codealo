@@ -53,8 +53,10 @@ const ProductoProvider = ({children}) => {
     };
 
     const handleSubmit = () => {
+        if(producto===0) return
         localStorage.setItem("datos", JSON.stringify(diccionario))
         setDatazos(diccionario);
+        setProducto(0)
         console.log(diccionario)
     }
     
@@ -73,6 +75,8 @@ const ProductoProvider = ({children}) => {
         handleSubmit, 
         datazos, 
         handleClickBorrar, 
+        setDiccionario,
+        setDatazos
     };
     return (
         <productoContext.Provider value={data}>
