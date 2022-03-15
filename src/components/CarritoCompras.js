@@ -4,6 +4,7 @@ import productoContext from '../context/contextCarrito';
 import CarritosComprasModule from "./CarritosCompras.module.css"
 import CarritoVacio from './CarritoVacio';
 import ProductoEnCarrito from './ProductoEnCarrito';
+import Button from '@mui/material/Button'
 
 export default function CarritoCompras() {
     let {
@@ -23,6 +24,9 @@ export default function CarritoCompras() {
                         )}
                     </div>
                     <div className={CarritosComprasModule.divButton} >
+                        <Button variant="text" href="#/carrito">
+                            ir
+                        </Button>
                         <NavLink to="/carrito" className={CarritosComprasModule.button} >Checkout</NavLink>
                     </div>
                 </>  
