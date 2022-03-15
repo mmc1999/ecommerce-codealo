@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { NavLink } from 'react-router-dom';
 import productoContext from '../context/contextCarrito';
 import CarritosComprasModule from "./CarritosCompras.module.css"
 import CarritoVacio from './CarritoVacio';
@@ -27,7 +26,7 @@ export default function CarritoCompras() {
                         <Button variant="text" href="#/carrito">
                             ir
                         </Button>
-                        <NavLink to="/carrito" className={CarritosComprasModule.button} >Checkout</NavLink>
+                        {/*<NavLink to="/carrito" className={CarritosComprasModule.button} >Checkout</NavLink>*/}
                     </div>
                 </>  
                 
